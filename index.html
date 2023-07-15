@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Website</title>
+</head>
+<body>
+  <p>This is some text.</p>
+  <button onclick="downloadFile()">Download File</button>
+
+  <script>
+    function downloadFile() {
+      var link = document.createElement('a');
+      link.href = 'https://drive.google.com/file/d/1w_on1qnPtnBCsS4deefn9B_NW9Xly75f/view?usp=sharing';  // Replace with the actual path to your file
+      link.download = 'Design Like Magic - Avishek D';       // Replace with the desired filename
+      link.click();
+    }
+  </script>
+</body>
+</html>
